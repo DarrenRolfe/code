@@ -1,0 +1,123 @@
+<html>
+<head>
+	<title>Website 1</title>
+	<link rel="stylesheet" type="text/css" href="blue.css" />
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400" rel="stylesheet" />
+	<script>
+	function changeCSS(cssFile, cssLinkIndex) {
+    	var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+	    var newlink = document.createElement("link");
+    	newlink.setAttribute("rel", "stylesheet");
+	    newlink.setAttribute("type", "text/css");
+    	newlink.setAttribute("href", cssFile);
+    	document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+	}
+	</script>
+</head>
+<body>
+	<div class="container">
+<!-- ^^^ TOP OF PAGE ^^^ -->
+
+
+<!-- SECTION: Menu -->
+<p class="header"></p>
+
+<p class="menu">
+	<div class="menuoption hyper"><a href="">Home</a></div>
+	<div class="menuoption hyper"><a href="">Menu 1</a></div>
+	<div class="menuoption hyper"><a href="">Menu 2</a></div>
+	<div class="menuoption hyper"><a href="#" onclick="changeCSS('green.css', 0);">Green CSS</a></div>
+	<div class="menuoption hyper"><a href="#" onclick="changeCSS('blue.css', 0);">Blue CSS</a></div>
+</p>
+<!-- END SECTION -->
+
+
+<!-- SECTION: Main Contents -->
+<div class="contents">
+<div class="centertext">
+	<h1>We shall call it... this website!</h1>
+	<div class="subtitle">Darren Rolfe</div>
+
+	<h2>Technology Summary</h2>
+	<div class="grid">
+		<div class="box a col1">Operating Systems:</div>
+		<div class="box a">Windows XP, 7, 8, 10<br />Windows Server NT, 2003, 2008 R2, 2012 R2</div>
+		<div class="box b col1">Windows Services:</div>
+		<div class="box b">Active Directory, DHCP, DNS, GPO, Exchange, IIS</div>
+		<div class="box a col1">Scripting:</div>
+		<div class="box a">PowerShell 4, ASP, PHP, AJAX, CSS</div>
+		<div class="box b col1">Networking:</div>
+		<div class="box b">Routers, Switches, Firewalls, IP Surveillance</div>
+		<div class="box a col1">Virtualisation:</div>
+		<div class="box a">VMWare (vSphere, vCenter), Hyper-V</div>
+	</div>
+
+	<h2>IT Experience</h2>
+	<div class="box text b">
+		<p>Broke stuff, fixed stuff, quickly walked away...</p>
+	</div>
+
+	<h2>Education and Qualifications</h2>
+	<div class="grid2">
+		<div class="box a col1">2016</div>
+		<div class="box a">Level 3 Diploma in First Line Management</div>
+		<div class="box a">Chartered Management Insitute</div>
+
+		<div class="box b col1">2014</div>
+		<div class="box b">Foundation Degree in Science (Distinction) in Communication System Engineering</div>
+		<div class="box b">Bournemouth University</div>
+
+		<div class="box a col1">2013</div>
+		<div class="box a">Cisco Certified Network Associate (CCNA) - Route &amp; Switch</div>
+		<div class="box a">Cisco</div>
+
+		<div class="box b col1">2013</div>
+		<div class="box b">ITIL Foundation Certificate in IT Service Management</div>
+		<div class="box b">EXIN</div>
+
+		<div class="box a col1">2011</div>
+		<div class="box a">Cisco Certified Entry Networking Technician (CCENT)</div>
+		<div class="box a">Cisco</div>
+
+		<div class="box b col1">2011</div>
+		<div class="box b">NVQ Level 3 for Communication Technology Professionals</div>
+		<div class="box b">British Army</div>
+
+		<div class="box a col1">2011</div>
+		<div class="box a">Advanced Level Apprenticeship for IT and Telecoms Professionals</div>
+		<div class="box a">British Army</div>
+
+		<div class="box b col1">2010</div>
+		<div class="box b">Level 2 Certificate in Leadership and Team Skills</div>
+		<div class="box b">Institute of Leadership and Management</div>
+
+		<div class="box a col1">2004</div>
+		<div class="box a">Higher National Certificate in Computing</div>
+		<div class="box a">Swindon College</div>
+	</div>
+	
+	<h2>Interests</h2>
+	<div class="box text b">
+		<p>Programming / Scripting</p>
+		<p>Networking</p>
+		<p>Home Automation / Smart Technology</p>
+		<p>Formula 1 &amp; Formula E</p>
+		<p>Motorbike &amp; Superbikes</p>
+		<p>JKD / Kung Fu &amp; Kali / Eskrima</p>
+	</div>
+
+</div>
+</div><!-- END SECTION -->
+
+
+<!-- SECTION: Page Footer -->
+<p class="footer">
+	<div class="foottext">Made in 2017. By Squirrels. Under duress.</div>
+</p>
+<!-- END SECTION -->
+
+
+<!-- vvv END OF PAGE vvv -->
+</div>
+</body>
+</html>
